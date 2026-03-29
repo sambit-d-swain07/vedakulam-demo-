@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic & Scientific Outreach | VedaKulam</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Outfit', 'sans-serif'], serif: ['Playfair Display', 'serif'], },
+                    colors: {
+                        brand: { 50: '#f0fdf4', 100: '#dcfce7', 500: '#22c55e', 600: '#16a34a', 700: '#15803d', 800: '#166534', 900: '#14532d', dark: '#082f18' },
+                        accent: { 400: '#facc15', 500: '#eab308' }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50 flex flex-col min-h-screen">
+    <!-- Header Navigation -->
+    <header id="navbar"
+        class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100 h-[100px] flex items-center">
+        <div class="container mx-auto px-4 md:px-8 xl:px-12 flex justify-between items-center w-full">
+            <a href="../index.html" class="flex items-center gap-2 group">
+                <div
+                    class="w-10 h-10 rounded-full bg-brand-700 text-white flex items-center justify-center text-xl shadow-lg ring-4 ring-brand-100 group-hover:scale-105 transition-transform">
+                    🌿</div>
+                <span class="text-3xl font-serif font-bold text-brand-900 tracking-tight">VedaKulam</span>
+            </a>
+            <nav class="hidden lg:flex items-center gap-8">
+                <a href="../index.html"
+                    class="text-[15px] font-bold text-gray-600 uppercase tracking-wide hover:text-brand-600 transition-colors relative group desktop-nav-link text-brand-600 pl-2 border-l-4 border-brand-600 border-none pl-0">Home<span
+                        class="absolute -bottom-2 left-0 w-full h-0.5 bg-brand-600 transition-all"></span></a>
+                <div class="dropdown-group">
+                    <a href="#"
+                        class="flex items-center gap-1 text-[15px] font-bold text-gray-600 uppercase tracking-wide hover:text-brand-600 transition-colors relative group desktop-nav-link">About
+                        <i class="fas fa-chevron-down text-[10px] mt-0.5 opacity-70"></i><span
+                            class="absolute -bottom-2 left-0 w-0 h-0.5 bg-brand-600 transition-all duration-300 group-hover:w-full"></span></a>
+                    <div class="dropdown-menu">
+                        <a href="vision-mission.html" class="dropdown-item">Vision & Mission</a>
+                        <a href="our-approach.html" class="dropdown-item">Our Approach</a>
+                        <a href="our-team.html" class="dropdown-item">Our Team</a>
+                        <a href="research-development.html" class="dropdown-item">Research & Development</a>
+                    </div>
+                </div>
+                <div class="dropdown-group">
+                    <a href="../index.html#wellness"
+                        class="flex items-center gap-1 text-[15px] font-bold text-gray-600 uppercase tracking-wide hover:text-brand-600 transition-colors relative group desktop-nav-link">Wellness
+                        & Growth <i class="fas fa-chevron-down text-[10px] mt-0.5 opacity-70"></i><span
+                            class="absolute -bottom-2 left-0 w-0 h-0.5 bg-brand-600 transition-all duration-300 group-hover:w-full"></span></a>
+                    <div class="dropdown-menu">
+                        <a href="check-health.html" class="dropdown-item">Check Your Health</a>
+                        <a href="physical-health.html" class="dropdown-item">Physical Health</a>
+                        <a href="mental-health.html" class="dropdown-item">Mental Health (Stress & Anxiety)</a>
+                        <a href="brain-power.html" class="dropdown-item">Brain Power (Memory & Concentration)</a>
+                        <a href="internet-addiction.html" class="dropdown-item">Internet Addiction</a>
+                    </div>
+                </div>
+                <a href="academic-progress.html"
+                    class="text-[15px] font-bold text-gray-600 uppercase tracking-wide hover:text-brand-600 transition-colors relative group desktop-nav-link">Academic
+                    Progress+<span
+                        class="absolute -bottom-2 left-0 w-0 h-0.5 bg-brand-600 transition-all duration-300 group-hover:w-full"></span></a>
+                <div class="dropdown-group">
+                    <a href="../index.html#resources"
+                        class="flex items-center gap-1 text-[15px] font-bold text-gray-600 uppercase tracking-wide hover:text-brand-600 transition-colors relative group desktop-nav-link">Resources
+                        <i class="fas fa-chevron-down text-[10px] mt-0.5 opacity-70"></i><span
+                            class="absolute -bottom-2 left-0 w-0 h-0.5 bg-brand-600 transition-all duration-300 group-hover:w-full"></span></a>
+                    <div class="dropdown-menu">
+                        <a href="outreach.html" class="dropdown-item">Academic & Scientific Outreach</a>
+                        <a href="admission.html" class="dropdown-item">Think Ahead (Admission & Fellowship)</a>
+                        <a href="events.html" class="dropdown-item">Our Events</a>
+                        <a href="ethics.html" class="dropdown-item">Inspiring Vision & Ethics</a>
+                        <a href="blog.html" class="dropdown-item">Blog & Stories</a>
+                    </div>
+                </div>
+                <a href="../index.html#gallery"
+                    class="text-[15px] font-bold text-gray-600 uppercase tracking-wide hover:text-brand-600 transition-colors relative group desktop-nav-link">Gallery<span
+                        class="absolute -bottom-2 left-0 w-0 h-0.5 bg-brand-600 transition-all duration-300 group-hover:w-full"></span></a>
+                <div class="dropdown-group">
+                    <a href="../index.html#contact"
+                        class="flex items-center gap-1 text-[15px] font-bold text-gray-600 uppercase tracking-wide hover:text-brand-600 transition-colors relative group desktop-nav-link">Contact
+                        us <i class="fas fa-chevron-down text-[10px] mt-0.5 opacity-70"></i><span
+                            class="absolute -bottom-2 left-0 w-0 h-0.5 bg-brand-600 transition-all duration-300 group-hover:w-full"></span></a>
+                    <div class="dropdown-menu">
+                        <a href="../index.html#write" class="dropdown-item">Write to us</a>
+                        <a href="../index.html#school" class="dropdown-item">Connect for School Program</a>
+                        <a href="../index.html#faqs" class="dropdown-item">FAQs</a>
+                    </div>
+                </div>
+                <a href="#contact"
+                    class="bg-brand-700 hover:bg-brand-800 text-white px-6 py-2.5 rounded-full font-bold uppercase text-[14px]">Subscribe</a>
+            </nav>
+            <button id="mobile-menu-btn" class="lg:hidden text-brand-900 text-2xl focus:outline-none"><i
+                    class="fas fa-bars"></i></button>
+        </div>
+        <div id="mobile-menu"
+            class="absolute top-[100px] left-0 w-full bg-white shadow-2xl z-40 lg:hidden hidden flex-col px-6 py-4 border-t border-brand-100 transition-all duration-300 max-h-[calc(100vh-100px)] overflow-y-auto">
+            <a href="../index.html"
+                class="mobile-link text-[16px] font-bold text-brand-800 py-3 block uppercase tracking-wide">Home</a>
+            <div class="mobile-dropdown py-1 border-t border-gray-50"><button
+                    class="mobile-dropdown-btn w-full flex justify-between items-center text-[16px] font-bold text-brand-800 py-3 uppercase tracking-wide focus:outline-none">About
+                    <i class="fas fa-plus text-xs"></i></button>
+                <div class="mobile-dropdown-content flex flex-col pl-4"><a href="vision-mission.html"
+                        class="mobile-link py-2 text-gray-600 text-sm font-medium">Vision & Mission</a><a
+                        href="our-approach.html" class="mobile-link py-2 text-gray-600 text-sm font-medium">Our
+                        Approach</a><a href="our-team.html"
+                        class="mobile-link py-2 text-gray-600 text-sm font-medium">Our Team</a><a
+                        href="research-development.html"
+                        class="mobile-link py-2 text-gray-600 text-sm font-medium">Research & Development</a></div>
+            </div>
+            <div class="mobile-dropdown py-1 border-t border-gray-50"><button
+                    class="mobile-dropdown-btn w-full flex justify-between items-center text-[16px] font-bold text-brand-800 py-3 uppercase tracking-wide focus:outline-none">Wellness
+                    & Growth <i class="fas fa-plus text-xs"></i></button>
+                <div class="mobile-dropdown-content flex flex-col pl-4"><a href="check-health.html"
+                        class="mobile-link py-2 text-gray-600 text-sm font-medium">Check Your Health</a><a
+                        href="physical-health.html" class="mobile-link py-2 text-gray-600 text-sm font-medium">Physical
+                        Health</a><a href="mental-health.html"
+                        class="mobile-link py-2 text-gray-600 text-sm font-medium">Mental Health (Stress &
+                        Anxiety)</a><a href="brain-power.html"
+                        class="mobile-link py-2 text-gray-600 text-sm font-medium">Brain Power (Memory &
+                        Concentration)</a><a href="internet-addiction.html"
+                        class="mobile-link py-2 text-gray-600 text-sm font-medium">Internet Addiction</a></div>
+            </div>
+            <a href="academic-progress.html"
+                class="mobile-link text-[16px] font-bold text-brand-800 py-4 border-t border-gray-50 uppercase tracking-wide">Academic
+                Progress+</a>
+            <div class="mobile-dropdown py-1 border-t border-gray-50"><button
+                    class="mobile-dropdown-btn w-full flex justify-between items-center text-[16px] font-bold text-brand-800 py-3 uppercase tracking-wide focus:outline-none">Resources
+                    <i class="fas fa-plus text-xs"></i></button>
+                <div class="mobile-dropdown-content flex flex-col pl-4"><a href="outreach.html"
+                        class="mobile-link py-2 text-gray-600 text-sm font-medium">Academic & Scientific Outreach</a><a
+                        href="admission.html" class="mobile-link py-2 text-gray-600 text-sm font-medium">Think
+                        Ahead (Admission & Fellowship)</a><a href="events.html"
+                        class="mobile-link py-2 text-gray-600 text-sm font-medium">Our Events</a><a
+                        href="ethics.html" class="mobile-link py-2 text-gray-600 text-sm font-medium">Inspiring
+                        Vision & Ethics</a><a href="blog.html"
+                        class="mobile-link py-2 text-gray-600 text-sm font-medium">Blog & Stories</a></div>
+            </div>
+            <a href="../index.html#gallery"
+                class="mobile-link text-[16px] font-bold text-brand-800 py-4 border-t border-gray-50 uppercase tracking-wide">Gallery</a>
+            <div class="mobile-dropdown py-1 border-t border-gray-50"><button
+                    class="mobile-dropdown-btn w-full flex justify-between items-center text-[16px] font-bold text-brand-800 py-3 uppercase tracking-wide focus:outline-none">Contact
+                    us <i class="fas fa-plus text-xs"></i></button>
+                <div class="mobile-dropdown-content flex flex-col pl-4"><a href="../index.html#write"
+                        class="mobile-link py-2 text-gray-600 text-sm font-medium">Write to us</a><a
+                        href="../index.html#school" class="mobile-link py-2 text-gray-600 text-sm font-medium">Connect for
+                        School Program</a><a href="../index.html#faqs"
+                        class="mobile-link py-2 text-gray-600 text-sm font-medium">FAQs</a></div>
+            </div>
+            <a href="#contact"
+                class="mobile-link block text-center bg-brand-700 text-white w-full py-3.5 rounded-full mt-4">Subscribe</a>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-[100px] bg-white">
+        <!-- Hero Section -->
+        <section class="bg-brand-900 text-white py-24 md:py-32 relative overflow-hidden flex flex-col items-center justify-center text-center px-4">
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover opacity-10" alt="Outreach">
+                <div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+            </div>
+            <div class="relative z-10 max-w-4xl w-full mx-auto">
+                <span class="text-accent-400 font-bold tracking-[0.3em] uppercase mb-6 inline-block px-6 py-2 border border-accent-400/30 rounded-full bg-accent-400/5 backdrop-blur-md shadow-2xl">Scientific Validation</span>
+                <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6 leading-tight">Academic & Scientific <br/> <span class="italic text-brand-100">Outreach</span></h1>
+                <p class="text-lg md:text-2xl text-brand-50 font-light mb-10 leading-relaxed opacity-90">Bridging the gap between empirical modern science and ancient Vedic wisdom through rigorous peer-reviewed methodologies.</p>
+            </div>
+        </section>
+
+        <!-- The Need for Integration -->
+        <section class="py-20 md:py-32 bg-white">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h2 class="text-3xl md:text-5xl font-serif font-bold text-gray-900 mb-8 leading-tight">Quantifying the <span class="italic text-brand-700">Intangible</span></h2>
+                        <p class="text-lg text-gray-600 leading-relaxed mb-6 font-light">At VedaKulam, we do not rely solely on anecdotal reports. Our outreach wing is dedicated to conducting randomized controlled trials and longitudinal studies in academic environments to map the physiological and neurological benefits of 'Dhyana' (meditation) and 'Asana' (postures).</p>
+                        <ul class="space-y-4 text-gray-700">
+                            <li class="flex gap-4"><i class="fas fa-flask text-brand-600 mt-1"></i> <b>EEG Mapping:</b> Analyzing brainwave states during deep focus modules.</li>
+                            <li class="flex gap-4"><i class="fas fa-heartbeat text-brand-600 mt-1"></i> <b>Biometric Baselines:</b> Tracking HRV and Cortisol levels in competitive exam aspirants.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-50 rounded-[3rem] p-12 shadow-xl border border-gray-100 relative group overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-brand-100 rounded-bl-full -z-0 transition-transform group-hover:scale-150 duration-700"></div>
+                        <div class="relative z-10">
+                            <i class="fas fa-file-contract text-5xl text-accent-500 mb-6 w-20 h-20 bg-white rounded-2xl flex items-center justify-center shadow-lg"></i>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Partner with Us</h3>
+                            <p class="text-gray-600 mb-8">We collaborate with cognitive science departments and school boards to conduct large-scale demographic impact studies.</p>
+                            <a href="../index.html#write" class="text-brand-700 font-bold uppercase tracking-wider text-sm hover:text-brand-900">Request a Collaboration <i class="fas fa-arrow-right ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Published Papers Mockup -->
+        <section class="py-20 md:py-32 bg-brand-50 relative overflow-hidden">
+            <div class="container mx-auto px-6 max-w-6xl relative z-10">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-4">Research & Citations</h2>
+                    <p class="text-lg text-gray-500 max-w-2xl mx-auto">Selected summaries of ongoing methodologies and whitepapers supported by the Veda Education Research body.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-xl transition-all border border-gray-100 group">
+                        <span class="text-xs font-bold text-brand-600 uppercase tracking-widest bg-brand-50 px-3 py-1 rounded-full mb-4 inline-block">Cognitive Science</span>
+                        <h4 class="text-xl font-bold text-gray-900 mb-4 group-hover:text-brand-700 transition-colors">Neuroplasticity and Pranayama Protocols</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6 border-b border-gray-100 pb-6">An investigation into sustained attention spans and gray matter density in adolescents utilizing breath-retention methodologies.</p>
+                        <a href="#" class="text-sm font-bold text-gray-400 hover:text-brand-600">Read Abstract</a>
+                    </div>
+                    <div class="bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-xl transition-all border border-gray-100 group">
+                        <span class="text-xs font-bold text-brand-600 uppercase tracking-widest bg-brand-50 px-3 py-1 rounded-full mb-4 inline-block">Psychometrics</span>
+                        <h4 class="text-xl font-bold text-gray-900 mb-4 group-hover:text-brand-700 transition-colors">Digital Decoupling & Anxiety Metrics</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6 border-b border-gray-100 pb-6">Observing the efficacy of specific 'dopamine fasting' cycles over a 90-day period on somatic stress markers using the SASS scale.</p>
+                        <a href="#" class="text-sm font-bold text-gray-400 hover:text-brand-600">Read Abstract</a>
+                    </div>
+                    <div class="bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-xl transition-all border border-gray-100 group">
+                        <span class="text-xs font-bold text-brand-600 uppercase tracking-widest bg-brand-50 px-3 py-1 rounded-full mb-4 inline-block">Somatic Research</span>
+                        <h4 class="text-xl font-bold text-gray-900 mb-4 group-hover:text-brand-700 transition-colors">Postural Biomechanics in Deep Learning</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6 border-b border-gray-100 pb-6">How spinal alignment ('Merudanda' integrity) impacts cerebral blood flow and memory retention during consecutive study hours.</p>
+                        <a href="#" class="text-sm font-bold text-gray-400 hover:text-brand-600">Read Abstract</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Copy (Simplified for mockup, assuming dynamic in real backend, but hardcoded here) -->
+    <footer id="contact" class="bg-brand-900 text-brand-50 pt-20 pb-10 border-t-[10px] border-accent-500 relative overflow-hidden">
+        <div class="container mx-auto px-6 md:px-12 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Data from index.html footer -->
+                <div class="space-y-6">
+                    <a href="../index.html" class="flex items-center gap-2 mb-6"><div class="w-12 h-12 rounded-full bg-white text-brand-700 flex items-center justify-center text-2xl shadow-lg">🌿</div><span class="text-3xl font-serif font-bold text-white tracking-tight">VedaKulam</span></a>
+                    <p class="text-brand-100/80 leading-relaxed font-light">VedaKulam is a unit of Veda Education Research Private Limited, India.</p>
+                </div>
+                <!-- Address -->
+                <div class="space-y-6" id="write">
+                    <h4 class="text-xl font-bold text-white uppercase tracking-wider mb-2">📍 Address</h4>
+                    <ul class="space-y-3 text-brand-100/80 font-light">
+                        <li class="flex items-start gap-3"><i class="fas fa-map-marker-alt mt-1.5 text-accent-500"></i><span>Roorkee, Uttarakhand,<br/>India<br/>Pin – 247667</span></li>
+                    </ul>
+                </div>
+                <!-- Connect -->
+                <div class="space-y-6" id="school">
+                    <h4 class="text-xl font-bold text-white uppercase tracking-wider mb-2">📞 Contact Us</h4>
+                    <ul class="space-y-4 text-brand-100/80 font-light">
+                        <li class="flex items-center gap-3"><i class="fas fa-phone-alt text-brand-400"></i><a href="tel:+918851288132">+91 88512 88132</a></li>
+                        <li class="flex items-center gap-3"><i class="fas fa-envelope text-brand-400"></i><a href="mailto:veda@gmail.com">veda@gmail.com</a></li>
+                    </ul>
+                </div>
+                <!-- Subscribe -->
+                <div class="space-y-6" id="faqs">
+                    <h4 class="text-xl font-bold text-white uppercase tracking-wider mb-2">📩 Subscribe</h4>
+                    <form class="space-y-3" onsubmit="event.preventDefault();"><input type="text" placeholder="Email" class="w-full px-4 py-3 bg-brand-900/50 border border-brand-700 rounded-lg text-white"><button class="w-full bg-accent-500 text-brand-900 font-bold py-3 rounded-lg hover:bg-accent-400">Join</button></form>
+                </div>
+            </div>
+            <div class="border-t border-brand-800 pt-8 flex text-brand-200/60 text-sm font-light"><p>&copy; 2026 Veda Education Research Private Limited. All rights reserved.</p></div>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>

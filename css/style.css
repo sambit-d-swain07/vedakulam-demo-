@@ -1,0 +1,239 @@
+/* Custom Styles for Animations and Tweaks */
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Selection Color */
+::selection {
+    background-color: #22c55e;
+    color: white;
+}
+
+/* Base resets or specific tweaks */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hero Slider Animations */
+.slide {
+    visibility: hidden;
+}
+.slide.opacity-100 {
+    visibility: visible;
+}
+
+/* Specific elements slide up delay */
+.slide-up-el {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.slide.opacity-100 .slide-up-el {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+
+/* Image scaling effect for active slide */
+.slide img {
+    transform: scale(1.05); /* slightly zoomed out state initially */
+    transition: transform 8s ease-out;
+}
+
+.slide.opacity-100 img {
+    transform: scale(1); /* zooming in to normal scale */
+}
+
+/* Slider Pagination Dots Active state */
+.slider-dot.active {
+    width: 2rem; /* 32px */
+    background-color: #facc15; /* accent color */
+    transition: all 0.4s ease;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f5f9; 
+}
+::-webkit-scrollbar-thumb {
+    background: #16a34a; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #15803d; 
+}
+
+/* Header link styles for active state */
+header a.active {
+    color: #16a34a;
+}
+header a.active span {
+    width: 100%;
+}
+
+/* Section Anchor adjustments for fixed header */
+section[id] {
+    scroll-margin-top: 100px;
+}
+
+/* --- NAVIGATION DROPDOWN STYLES --- */
+
+/* Dropdown Container */
+.dropdown-group {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: -10px;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background-color: white;
+    min-width: 240px;
+    padding: 1rem 0;
+    border-radius: 1rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: 60;
+}
+
+/* Dropdown Arrow */
+.dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.04);
+    border-left: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+/* Show Dropdown on Hover */
+.dropdown-group:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* Dropdown Items */
+.dropdown-item {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    color: #4b5563; /* text-gray-600 */
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 500;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.dropdown-item:hover {
+    background-color: #f0fdf4; /* brand-50 */
+    color: #166534; /* brand-800 */
+    padding-left: 1.75rem;
+}
+
+/* Mobile Dropdown Tweak */
+.mobile-dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #f9fafb; /* gray-50 */
+}
+
+.mobile-dropdown-active .mobile-dropdown-content {
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+}
+
+.mobile-dropdown-btn i {
+    transition: transform 0.3s ease;
+}
+
+.mobile-dropdown-active .mobile-dropdown-btn i {
+    transform: rotate(180deg);
+}
+
+/* --- DYNAMIC REVIEW SLIDER STYLES --- */
+.review-card.is-active {
+    background-color: #14532d; /* bg-brand-900 */
+    color: white;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+    border-color: transparent;
+}
+
+@media (min-width: 768px) {
+    .review-card.is-active {
+        transform: translateY(-1rem); /* transform md:-translate-y-4 */
+    }
+}
+
+.review-card.is-active .review-decor {
+    opacity: 0.5; /* Show decorative corner */
+}
+
+.review-card.is-active .review-quote {
+    color: #15803d; /* text-brand-700 */
+}
+
+/* group-hover for the quote in active state */
+.review-card.is-active:hover .review-quote {
+    color: #16a34a; /* text-brand-600 */
+}
+
+.review-card.is-active .review-stars {
+    color: #facc15; /* text-accent-400 */
+}
+
+.review-card.is-active .review-text {
+    color: white;
+    filter: drop-shadow(0 1px 1px rgba(0,0,0,0.05));
+}
+
+.review-card.is-active .review-author {
+    color: white;
+}
+
+.review-card.is-active .review-role {
+    color: #6ee7b7; /* text-brand-300 */
+}
+
+.review-card.is-active .review-emoji-container {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Custom Animations */
+@keyframes bounce-slow {
+    0%, 100% {
+        transform: translateY(-5%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+}
+.animate-bounce-slow {
+    animation: bounce-slow 3s infinite;
+}

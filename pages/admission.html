@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Think Ahead (Admission & Fellowship) | VedaKulam</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script>
+        tailwind.config = {
+            theme: { extend: { fontFamily: { sans: ['Outfit', 'sans-serif'], serif: ['Playfair Display', 'serif'], }, colors: { brand: { 50: '#f0fdf4', 100: '#dcfce7', 500: '#22c55e', 600: '#16a34a', 700: '#15803d', 800: '#166534', 900: '#14532d', dark: '#082f18' }, accent: { 400: '#facc15', 500: '#eab308' } } } }
+        }
+    </script>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50 flex flex-col min-h-screen">
+    <!-- Header Navigation Map (identical to outreach.html logically) -->
+    <header id="navbar"
+        class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100 h-[100px] flex items-center">
+        <div class="container mx-auto px-4 md:px-8 xl:px-12 flex justify-between items-center w-full">
+            <a href="../index.html" class="flex items-center gap-2 group">
+                <div
+                    class="w-10 h-10 rounded-full bg-brand-700 text-white flex items-center justify-center text-xl shadow-lg ring-4 ring-brand-100 group-hover:scale-105 transition-transform">
+                    🌿</div>
+                <span class="text-3xl font-serif font-bold text-brand-900 tracking-tight">VedaKulam</span>
+            </a>
+            <nav class="hidden lg:flex items-center gap-8">
+                <a href="../index.html"
+                    class="text-[15px] font-bold text-gray-600 uppercase tracking-wide hover:text-brand-600 transition-colors relative group desktop-nav-link text-brand-600 pl-2 border-l-4 border-brand-600 border-none pl-0">Home<span
+                        class="absolute -bottom-2 left-0 w-full h-0.5 bg-brand-600 transition-all"></span></a>
+                <div class="dropdown-group">
+                    <a href="#"
+                        class="flex items-center gap-1 text-[15px] font-bold text-gray-600 uppercase tracking-wide hover:text-brand-600 transition-colors relative group desktop-nav-link">About
+                        <i class="fas fa-chevron-down text-[10px] mt-0.5 opacity-70"></i><span
+                            class="absolute -bottom-2 left-0 w-0 h-0.5 bg-brand-600 transition-all duration-300 group-hover:w-full"></span></a>
+                    <div class="dropdown-menu">
+                        <a href="vision-mission.html" class="dropdown-item">Vision & Mission</a>
+                        <a href="our-approach.html" class="dropdown-item">Our Approach</a>
+                        <a href="our-team.html" class="dropdown-item">Our Team</a>
+                        <a href="research-development.html" class="dropdown-item">Research & Development</a>
+                    </div>
+                </div>
+                <div class="dropdown-group">
+                    <a href="../index.html#wellness"
+                        class="flex items-center gap-1 text-[15px] font-bold text-gray-600 uppercase tracking-wide hover:text-brand-600 transition-colors relative group desktop-nav-link">Wellness
+                        & Growth <i class="fas fa-chevron-down text-[10px] mt-0.5 opacity-70"></i><span
+                            class="absolute -bottom-2 left-0 w-0 h-0.5 bg-brand-600 transition-all duration-300 group-hover:w-full"></span></a>
+                    <div class="dropdown-menu">
+                        <a href="check-health.html" class="dropdown-item">Check Your Health</a>
+                        <a href="physical-health.html" class="dropdown-item">Physical Health</a>
+                        <a href="mental-health.html" class="dropdown-item">Mental Health (Stress & Anxiety)</a>
+                        <a href="brain-power.html" class="dropdown-item">Brain Power (Memory & Concentration)</a>
+                        <a href="internet-addiction.html" class="dropdown-item">Internet Addiction</a>
+                    </div>
+                </div>
+                <a href="academic-progress.html"
+                    class="text-[15px] font-bold text-gray-600 uppercase tracking-wide hover:text-brand-600 transition-colors relative group desktop-nav-link">Academic
+                    Progress+<span
+                        class="absolute -bottom-2 left-0 w-0 h-0.5 bg-brand-600 transition-all duration-300 group-hover:w-full"></span></a>
+                <div class="dropdown-group">
+                    <a href="../index.html#resources"
+                        class="flex items-center gap-1 text-[15px] font-bold text-gray-600 uppercase tracking-wide hover:text-brand-600 transition-colors relative group desktop-nav-link">Resources
+                        <i class="fas fa-chevron-down text-[10px] mt-0.5 opacity-70"></i><span
+                            class="absolute -bottom-2 left-0 w-0 h-0.5 bg-brand-600 transition-all duration-300 group-hover:w-full"></span></a>
+                    <div class="dropdown-menu">
+                        <a href="outreach.html" class="dropdown-item">Academic & Scientific Outreach</a>
+                        <a href="admission.html" class="dropdown-item">Think Ahead (Admission & Fellowship)</a>
+                        <a href="events.html" class="dropdown-item">Our Events</a>
+                        <a href="ethics.html" class="dropdown-item">Inspiring Vision & Ethics</a>
+                        <a href="blog.html" class="dropdown-item">Blog & Stories</a>
+                    </div>
+                </div>
+                <a href="../index.html#gallery"
+                    class="text-[15px] font-bold text-gray-600 uppercase tracking-wide hover:text-brand-600 transition-colors relative group desktop-nav-link">Gallery<span
+                        class="absolute -bottom-2 left-0 w-0 h-0.5 bg-brand-600 transition-all duration-300 group-hover:w-full"></span></a>
+                <div class="dropdown-group">
+                    <a href="../index.html#contact"
+                        class="flex items-center gap-1 text-[15px] font-bold text-gray-600 uppercase tracking-wide hover:text-brand-600 transition-colors relative group desktop-nav-link">Contact
+                        us <i class="fas fa-chevron-down text-[10px] mt-0.5 opacity-70"></i><span
+                            class="absolute -bottom-2 left-0 w-0 h-0.5 bg-brand-600 transition-all duration-300 group-hover:w-full"></span></a>
+                    <div class="dropdown-menu">
+                        <a href="../index.html#write" class="dropdown-item">Write to us</a>
+                        <a href="../index.html#school" class="dropdown-item">Connect for School Program</a>
+                        <a href="../index.html#faqs" class="dropdown-item">FAQs</a>
+                    </div>
+                </div>
+                <a href="#contact"
+                    class="bg-brand-700 hover:bg-brand-800 text-white px-6 py-2.5 rounded-full font-bold uppercase text-[14px]">Subscribe</a>
+            </nav>
+            <button id="mobile-menu-btn" class="lg:hidden text-brand-900 text-2xl focus:outline-none"><i
+                    class="fas fa-bars"></i></button>
+        </div>
+        <div id="mobile-menu"
+            class="absolute top-[100px] left-0 w-full bg-white shadow-2xl z-40 lg:hidden hidden flex-col px-6 py-4 border-t border-brand-100 transition-all duration-300 max-h-[calc(100vh-100px)] overflow-y-auto">
+            <a href="../index.html"
+                class="mobile-link text-[16px] font-bold text-brand-800 py-3 block uppercase tracking-wide">Home</a>
+            <div class="mobile-dropdown py-1 border-t border-gray-50"><button
+                    class="mobile-dropdown-btn w-full flex justify-between items-center text-[16px] font-bold text-brand-800 py-3 uppercase tracking-wide focus:outline-none">About
+                    <i class="fas fa-plus text-xs"></i></button>
+                <div class="mobile-dropdown-content flex flex-col pl-4"><a href="vision-mission.html"
+                        class="mobile-link py-2 text-gray-600 text-sm font-medium">Vision & Mission</a><a
+                        href="our-approach.html" class="mobile-link py-2 text-gray-600 text-sm font-medium">Our
+                        Approach</a><a href="our-team.html"
+                        class="mobile-link py-2 text-gray-600 text-sm font-medium">Our Team</a><a
+                        href="research-development.html"
+                        class="mobile-link py-2 text-gray-600 text-sm font-medium">Research & Development</a></div>
+            </div>
+            <div class="mobile-dropdown py-1 border-t border-gray-50"><button
+                    class="mobile-dropdown-btn w-full flex justify-between items-center text-[16px] font-bold text-brand-800 py-3 uppercase tracking-wide focus:outline-none">Wellness
+                    & Growth <i class="fas fa-plus text-xs"></i></button>
+                <div class="mobile-dropdown-content flex flex-col pl-4"><a href="check-health.html"
+                        class="mobile-link py-2 text-gray-600 text-sm font-medium">Check Your Health</a><a
+                        href="physical-health.html" class="mobile-link py-2 text-gray-600 text-sm font-medium">Physical
+                        Health</a><a href="mental-health.html"
+                        class="mobile-link py-2 text-gray-600 text-sm font-medium">Mental Health (Stress &
+                        Anxiety)</a><a href="brain-power.html"
+                        class="mobile-link py-2 text-gray-600 text-sm font-medium">Brain Power (Memory &
+                        Concentration)</a><a href="internet-addiction.html"
+                        class="mobile-link py-2 text-gray-600 text-sm font-medium">Internet Addiction</a></div>
+            </div>
+            <a href="academic-progress.html"
+                class="mobile-link text-[16px] font-bold text-brand-800 py-4 border-t border-gray-50 uppercase tracking-wide">Academic
+                Progress+</a>
+            <div class="mobile-dropdown py-1 border-t border-gray-50"><button
+                    class="mobile-dropdown-btn w-full flex justify-between items-center text-[16px] font-bold text-brand-800 py-3 uppercase tracking-wide focus:outline-none">Resources
+                    <i class="fas fa-plus text-xs"></i></button>
+                <div class="mobile-dropdown-content flex flex-col pl-4"><a href="outreach.html"
+                        class="mobile-link py-2 text-gray-600 text-sm font-medium">Academic & Scientific Outreach</a><a
+                        href="admission.html" class="mobile-link py-2 text-gray-600 text-sm font-medium">Think
+                        Ahead (Admission & Fellowship)</a><a href="events.html"
+                        class="mobile-link py-2 text-gray-600 text-sm font-medium">Our Events</a><a
+                        href="ethics.html" class="mobile-link py-2 text-gray-600 text-sm font-medium">Inspiring
+                        Vision & Ethics</a><a href="blog.html"
+                        class="mobile-link py-2 text-gray-600 text-sm font-medium">Blog & Stories</a></div>
+            </div>
+            <a href="../index.html#gallery"
+                class="mobile-link text-[16px] font-bold text-brand-800 py-4 border-t border-gray-50 uppercase tracking-wide">Gallery</a>
+            <div class="mobile-dropdown py-1 border-t border-gray-50"><button
+                    class="mobile-dropdown-btn w-full flex justify-between items-center text-[16px] font-bold text-brand-800 py-3 uppercase tracking-wide focus:outline-none">Contact
+                    us <i class="fas fa-plus text-xs"></i></button>
+                <div class="mobile-dropdown-content flex flex-col pl-4"><a href="../index.html#write"
+                        class="mobile-link py-2 text-gray-600 text-sm font-medium">Write to us</a><a
+                        href="../index.html#school" class="mobile-link py-2 text-gray-600 text-sm font-medium">Connect for
+                        School Program</a><a href="../index.html#faqs"
+                        class="mobile-link py-2 text-gray-600 text-sm font-medium">FAQs</a></div>
+            </div>
+            <a href="#contact"
+                class="mobile-link block text-center bg-brand-700 text-white w-full py-3.5 rounded-full mt-4">Subscribe</a>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-[100px] bg-white">
+        <!-- Hero Section -->
+        <section class="bg-white py-24 md:py-32 relative overflow-hidden flex flex-col items-center justify-center text-center px-4 border-b border-gray-100">
+            <div class="absolute inset-0 z-0 bg-gradient-to-br from-brand-50 to-white"></div>
+            <div class="relative z-10 max-w-4xl w-full mx-auto">
+                <span class="text-brand-600 font-bold tracking-[0.3em] uppercase mb-6 inline-block px-6 py-2 border border-brand-200 rounded-full bg-white shadow-sm">Admission & Fellowship</span>
+                <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6 leading-tight text-gray-900">Think <br/> <span class="italic text-brand-700">Ahead.</span></h1>
+                <p class="text-lg md:text-2xl text-gray-600 font-light mb-10 leading-relaxed max-w-2xl mx-auto">Join a cohort of driven individuals looking to master not just their curriculum, but themselves.</p>
+                <a href="#apply" class="px-10 py-5 bg-brand-900 text-white rounded-full font-bold uppercase tracking-widest text-sm hover:shadow-2xl hover:scale-105 transition-all">Begin Application</a>
+            </div>
+            <!-- Decorative Graphics -->
+            <div class="absolute -bottom-10 -right-10 w-96 h-96 bg-accent-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+            <div class="absolute top-20 -left-10 w-72 h-72 bg-brand-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style="animation-delay: 2s;"></div>
+        </section>
+
+        <!-- The Fellowship Details -->
+        <section class="py-20 md:py-32 bg-white">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-5xl font-serif font-bold text-gray-900 mb-6">The VedaKulam Fellowship</h2>
+                    <p class="text-lg text-gray-500 font-light max-w-3xl mx-auto">A rigorous 1-year program designed for students who want to integrate peak cognitive performance with deep emotional resilience. We select 50 students per cohort.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="p-10 bg-brand-900 text-white rounded-[2.5rem] shadow-xl relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 p-6 text-7xl opacity-5 font-serif group-hover:scale-110 transition-transform">01</div>
+                        <h3 class="text-2xl font-bold mb-4 font-serif relative z-10 text-accent-400">Application</h3>
+                        <p class="text-brand-50/80 font-light leading-relaxed relative z-10 mb-8">Submit a detailed essay detailing your academic goals and the personal challenges you face regarding focus, burnout, or stress.</p>
+                    </div>
+                    <div class="p-10 bg-white border border-gray-100 text-gray-900 rounded-[2.5rem] shadow-xl relative overflow-hidden group hover:bg-brand-50 transition-colors">
+                        <div class="absolute top-0 right-0 p-6 text-7xl opacity-5 font-serif group-hover:scale-110 transition-transform text-brand-900">02</div>
+                        <h3 class="text-2xl font-bold mb-4 font-serif relative z-10 text-brand-700">Screening (SASS)</h3>
+                        <p class="text-gray-500 font-light leading-relaxed relative z-10 mb-8">Candidates undergo a preliminary Student Academic Stress Scale assessment to identify baseline cognitive baselines.</p>
+                    </div>
+                    <div class="p-10 bg-white border border-gray-100 text-gray-900 rounded-[2.5rem] shadow-xl relative overflow-hidden group hover:bg-brand-50 transition-colors">
+                        <div class="absolute top-0 right-0 p-6 text-7xl opacity-5 font-serif group-hover:scale-110 transition-transform text-brand-900">03</div>
+                        <h3 class="text-2xl font-bold mb-4 font-serif relative z-10 text-brand-700">Interview</h3>
+                        <p class="text-gray-500 font-light leading-relaxed relative z-10 mb-8">A 30-minute dialogue with our educators and wellness officers to align expectations and gauge commitment levels.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Eligibility -->
+        <section id="apply" class="py-20 md:py-32 bg-gray-50 border-t border-gray-100">
+             <div class="container mx-auto px-6 max-w-4xl text-center">
+                 <h2 class="text-3xl md:text-5xl font-serif font-bold text-gray-900 mb-8">Ready to Transform?</h2>
+                 <p class="text-lg text-gray-600 mb-10 font-light bg-white p-8 rounded-2xl shadow-sm border border-brand-100">
+                     We are currently accepting applications for the <b>Summer 2026 Batch</b>. <br/> Open to high school (Grade 9-12) and early college students worldwide.
+                 </p>
+                 <a href="mailto:admission@veda.com" class="inline-flex items-center gap-4 bg-brand-700 text-white px-12 py-5 rounded-full font-bold uppercase tracking-[0.2em] text-sm hover:shadow-2xl hover:bg-brand-800 transition-all">Submit Portfolio <i class="fas fa-paper-plane"></i></a>
+             </div>
+        </section>
+
+    </main>
+
+    <!-- Basic Footer -->
+    <footer class="bg-brand-900 text-brand-50 py-10 border-t-[10px] border-accent-500 text-center text-brand-200/60 font-light text-sm">
+        <p>&copy; 2026 Veda Education Research Private Limited.</p>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>
